@@ -18,7 +18,7 @@ export default function SystemDetailPage({ params }: { params: Promise<{ systemI
 
   return (
     <div className="min-h-screen bg-background p-4 md:p-6">
-      <Header title={`${system.description} - ${system.name}`} />
+      {/* <Header title={`${system.description} - ${system.name}`} /> */}
 
       <div className="border border-border rounded-lg p-4 md:p-6 bg-card">
         <AppHeader showBack backHref="/pos/integration-health" />
@@ -26,7 +26,7 @@ export default function SystemDetailPage({ params }: { params: Promise<{ systemI
         <div className="mt-6 flex">
           <div className="border border-border px-6 py-3 font-semibold text-foreground">Status</div>
           <div className={`flex-1 px-6 py-3 text-white font-semibold ${isOffline ? "bg-red-500" : "bg-green-500"}`}>
-            {isOffline ? "OFFLINE" : "ONLINE"}
+          {isOffline ? "OFFLINE" : "ONLINE"}
           </div>
         </div>
 
